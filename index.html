@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Inventory</title>
+    <style>
+        th{
+            border:1px solid blue; height: 30px; width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stocks</h1>
+    </header>
+    <div>
+        <form id="form-element">
+            <label for="serial-no"></label>
+            <input type="text" class="serialNum" id="serial-no" placeholder="serial Number">
+            <label for="item-name"></label>
+            <input type="text" class="itemNames" id="item-name" placeholder="item Names">
+            <label for="openingStock"></label>
+            <input type="text" class = "opening" id="openingStock" placeholder="Opening Stock">
+            <label for="in-flows"></label>
+            <input type="text" class="inflows" id="in-flows" placeholder="Stock inflows">
+            <label for="out-flows"></label>
+            <input type="text" class="outflows" id="out-flows" placeholder="Stock Out">
+            <label for="closingStock"></label>
+            <input type="text" class="closing" id="closingStock" placeholder="Closing stock">
+            <label for="actualStock"></label>
+            <input type="text" class="actual" id="actualStock" placeholder="Actual">
+            <input type="submit" value="Add Table" id="addTable">
+        </form>
+    </div><br>
+    <table id="tabElement">
+        <thead>
+            <tr class="itemRow">
+                <th class="tabClass">serial no</th>
+                <th class="tabClass">item Names</th>
+                <th class="tabClass">opening</th>
+                <th class="tabClass">inflows</th>
+                <th class="tabClass">outflows</th>
+                <th class="tabClass">closing</th>
+                <th class="tabClass">actual</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <th class="tabClass">1</th>
+                <th class="tabClass">Gold</th>
+                <th class="tabClass">35</th>
+                <th class="tabClass">47</th>
+                <th class="tabClass">30</th>
+                <th class="tabClass">48</th>
+                <th class="tabClass">45</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
